@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+function adicionar(num) {
+    var numero = document.getElementById("result").innerHTML;
+   numero = document.getElementById('result').innerHTML = numero + num;
+
+
+
+   /* document.getElementById serve para pegar a informaçao do determinado id
+   que foi fornecido nos parenteses */
+
+   //.innerHTML serve para mudar o conteudo do id fornecido no document.getElemetByid//
+  
+}
+
+function clean() {
+    document.getElementById('result').innerHTML ='';
+}
+
+function calcular() {
+    var resultado = document.getElementById('result').innerHTML;
+    if (resultado) {
+        document.getElementById('result').innerHTML = eval(resultado);
+    }
+
+    /*eval é uma função do proprio js que pega os caracteres da cadeia (variavél) e retorna seu valor
+    exemplo: 1+1 a função vai retornar 2*/
+}
+    </script>
+
+
+
+<h2>Calculadora</h2>
+
+<div>
+
+    
+    <p id="result"></p><br>
+    <input type="button" value="1" class="botao" onclick="adicionar(1)">
+    <input type="button" value="2" class="botao" onclick="adicionar(2)">
+    <input type="button" value="3" class="botao" onclick="adicionar(3)"> 
+    <input type="button" value="+" class="botao" onclick="adicionar('+')"> <br>
+    <input type="button" value="4" class="botao" onclick="adicionar(4)">
+    <input type="button" value="5" class="botao" onclick="adicionar(5)">
+    <input type="button" value="6" class="botao" onclick="adicionar(6)"> 
+    <input type="button" value="-" class="botao" onclick="adicionar('-')"> <br>
+    <input type="button" value="7" class="botao" onclick="adicionar(7)">
+    <input type="button" value="8" class="botao" onclick="adicionar(8)">
+    <input type="button" value="9" class="botao" onclick="adicionar(9)"> 
+    <input type="button" value="*" class="botao" onclick="adicionar('*')"> <br>
+    <input type="button" value="0" class="botao" onclick="adicionar(0)">
+    <input type="button" value="." class="botao" onclick="adicionar('.')">
+    <input type="button" value="Del"class="botao" onclick="clean()">
+    <input type="button" value="/" class="botao" onclick="adicionar('/')"> <br>
+    <input type="button" value="=" class="botao" id="igual" onclick="calcular()">
+
+</div>
+</body>
+</html>
