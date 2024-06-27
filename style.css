@@ -1,0 +1,55 @@
+body{
+    background-color: #ffdfcf;
+    
+}
+
+
+
+h2{
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+margin-left: 600px;
+color: #ff62b4;
+margin-top: 90px;
+font-weight: bold;
+}
+
+div{
+    background-color: #ffffc1;;
+    border: 3px solid pink;
+   margin-left: 550px;
+   margin-right: 50px;
+   margin-top: 80px;
+    height: 290px;
+    width: 220px;
+    padding-left: 10px;
+  
+   
+    }
+
+
+
+
+#result{
+    background-color:#ffa0bd;
+    height: 30px;
+    width: 209px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    text-align: end;
+   
+   
+
+}
+
+.botao{
+    background-color: #ff62b4;
+    height: 40px;
+    width: 50px;
+    margin-bottom: 5px;
+    
+    
+}
+#igual{
+    width: 213px;
+    
+}
