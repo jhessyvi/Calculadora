@@ -1,0 +1,1 @@
+Esta é uma calculadora criada com HTML, CSS e Javascript, feita como atividade no curso de informática para internet no instituto federal campus São Miguel Dos Campos.
